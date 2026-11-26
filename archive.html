@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Markets: archive</title>
+<link rel="canonical" href="https://markets.khodakhah.net/archive.html">
+<meta name="description" content="Every daily analysis and weekly review, newest first.">
+<meta name="author" content="Keyvan Khodakhah">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Markets · Keyvan Khodakhah">
+<meta property="og:title" content="Markets: archive">
+<meta property="og:description" content="Every daily analysis and weekly review, newest first.">
+<meta property="og:url" content="https://markets.khodakhah.net/archive.html">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@kkhodakhah">
+<link rel="alternate" type="application/rss+xml" title="Markets · Keyvan Khodakhah" href="/feed.xml">
+
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Space+Grotesk:wght@500;600&display=swap" rel="stylesheet">
+<style>
+/* VOICE: a serious daily market brief, the calm authority of a newspaper's markets page.
+   IDEA: the printed morning markets sheet: masthead, lead finding, figures, then the story by market.
+   PICTURE: a range map of four markets on Swing Intelligence's premium / equilibrium / discount zones.
+   COLOUR and TYPE: ice ground, deep ink, one hot pink accent; zones in red, grey and teal. Space Grotesk + Inter.
+   LAYOUT: ink masthead, hero finding left with the range map right, a figures strip, a 720px reading column. */
+:root{color-scheme:light dark;--bg:light-dark(#dff1f7,#06222e);--paper:light-dark(#f4fbfd,#0b2d3b);--ink:light-dark(#06222e,#e3f3f8);
+--mute:light-dark(#3d5866,#9fbfcb);--line:light-dark(#b9d6e0,#1e4a5b);--acc:#ff2e7e;--prem:#d64550;--eq:#8a97a3;--disc:#129b86;
+--up:light-dark(#0b7a69,#3fd0b5);--dn:light-dark(#c0313f,#ff7d89)}
+:root[data-theme=light]{color-scheme:light}:root[data-theme=dark]{color-scheme:dark}
+*{box-sizing:border-box;min-width:0}
+body{margin:0;background:var(--bg);color:var(--ink);font:16.5px/1.6 Inter,system-ui,sans-serif;overflow-x:clip}
+h1,h2,h3,.word{font-family:"Space Grotesk",Inter,sans-serif;font-weight:600;line-height:1.08;text-wrap:balance;margin:0}
+a{color:inherit;text-decoration-color:var(--acc);text-underline-offset:3px}
+.band{padding:clamp(28px,4vw,56px) max(5vw,16px)}
+.wrap{max-width:1240px;margin:0 auto}
+.mast{background:#06222e;color:#e3f3f8;padding:14px max(5vw,16px)}
+.mast .wrap{display:flex;flex-wrap:wrap;gap:8px 24px;align-items:baseline;justify-content:space-between}
+.word{font-size:26px;letter-spacing:-.01em}.word span{color:var(--acc)}
+.mast nav{display:flex;flex-wrap:wrap;gap:4px 18px;font-size:14px}.mast nav a{text-decoration:none;opacity:.85;padding:10px 0}
+.mast nav a:hover,.mast nav a:focus-visible{opacity:1;text-decoration:underline}
+.preview{font-size:13px;color:var(--mute);margin:0 0 14px}
+.hero .wrap.two{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:clamp(24px,4vw,56px);align-items:center}
+.kick{font-size:14px;color:var(--mute);margin:0 0 12px}.kick b{color:var(--acc);font-weight:600}
+h1{font-size:clamp(32px,4.4vw,50px)}
+.stand{font-size:18.5px;margin:18px 0 0;max-width:34em}
+.by{font-size:14px;color:var(--mute);margin-top:18px}
+.rmap{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:18px 18px 10px}
+.rmap h2{font-size:17px;margin:0 0 2px}.rmap .note{font-size:13px;color:var(--mute);margin:0 0 6px}
+.fig{position:relative;min-height:340px}.fig>svg{position:absolute;inset:0;width:100%;height:100%;overflow:visible}
+#rmap.fig{min-height:300px}
+.figs{background:var(--paper);border-block:1px solid var(--line)}
+.figs .wrap{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:0;padding:0 max(5vw,16px)}
+.kf{padding:16px 12px;border-inline-start:1px solid var(--line)}.kf:first-child{border:0}
+.kf span{display:block;font-size:13px;color:var(--mute)}.kf b{display:block;font:600 21px/1.2 "Space Grotesk",sans-serif;white-space:nowrap}
+.kf i{font-style:normal;font-size:14px;font-weight:600;white-space:nowrap}.up{color:var(--up)}.dn{color:var(--dn)}
+.toc{display:flex;gap:6px 20px;overflow-x:auto;padding:14px max(5vw,16px);font-size:14px;border-bottom:1px solid var(--line)}
+.toc a{flex:none;text-decoration:none;color:var(--mute);padding:8px 0}.toc a:hover{color:var(--ink)}
+@media(min-width:900px){.toc{position:sticky;top:0;z-index:5;background:var(--bg)}}
+html{scroll-padding-top:72px}
+.col{max-width:760px;margin:0 auto}
+article h2{font-size:clamp(26px,3vw,34px);margin:56px 0 14px}
+article h3{font-size:24px;margin:0 0 12px}
+.brief{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:6px 24px 8px;margin-top:8px}
+.brief li{margin:10px 0}
+table{border-collapse:collapse;width:100%;font-size:14.5px;background:var(--paper)}
+th,td{padding:8px 10px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+th{font-weight:600;font-size:13px;color:var(--mute)}
+.scroll{overflow-x:auto;border:1px solid var(--line);border-radius:10px}
+.scroll td:nth-child(2),.scroll td:nth-child(3){white-space:nowrap}
+.mkt{margin:44px 0}
+.chart{margin:0 0 18px;padding:16px 16px 10px;background:var(--paper);border:1px solid var(--line);border-radius:14px}
+.chart figcaption{font-size:14.5px;margin-bottom:6px}
+.legend{display:flex;flex-wrap:wrap;gap:4px 16px;font-size:13px;color:var(--mute);margin:0 0 4px}
+.legend i{display:inline-block;width:12px;height:12px;border-radius:3px;margin-right:6px;vertical-align:-1px}
+.src{font-size:12.5px;color:var(--mute);margin:6px 0 0}
+.chart .fig{min-height:360px}
+.tip{position:absolute;pointer-events:none;background:var(--ink);color:var(--bg);font-size:12.5px;line-height:1.45;padding:7px 9px;border-radius:8px;white-space:nowrap;display:none;z-index:2}
+.about{background:#06222e;color:#e3f3f8;margin-top:64px}
+.about .wrap{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:clamp(20px,4vw,48px)}
+.about h2{font-size:28px;color:#fff}.about a{color:#fff}
+.small{font-size:13.5px;color:var(--mute)}.about .small{color:#9fbfcb}
+ul.arch{list-style:none;padding:0;margin:0}ul.arch li{border-bottom:1px solid var(--line)}ul.arch a{display:block;padding:14px 0;text-decoration:none}ul.arch a:hover b{color:var(--acc)}
+footer{padding:28px max(5vw,16px);font-size:13px;color:var(--mute)}
+@media(max-width:900px){.hero .wrap,.about .wrap{grid-template-columns:minmax(0,1fr)}.figs .wrap{grid-template-columns:repeat(3,minmax(0,1fr))}.kf:nth-child(4){border:0}}
+@media(max-width:600px){.figs .wrap{grid-template-columns:repeat(2,minmax(0,1fr))}.kf{border:0}table{font-size:13px}.chart{padding:12px 8px 8px}.chart .fig{min-height:300px}}
+@media(prefers-reduced-motion:no-preference){.dot{transition:transform .6s ease}}
+</style>
+</head>
+<body>
+<header class="mast"><div class="wrap"><div class="word">Markets <span>·</span> Keyvan Khodakhah</div>
+<nav aria-label="Site"><a href="/">Latest</a><a href="/archive.html">Archive</a><a href="#about">The indicator</a><a href="#disclaimer">About</a></nav></div></header>
+
+<section class="hero band" id="top"><div class="wrap"><div><p class="kick"><b>Archive</b></p><h1>Every analysis, newest first</h1></div></div></section>
+
+
+<article class="band"><div class="col"><h2 id="archive" style="margin-top:0">Archive</h2><ul class="arch"><li><a href="/daily/2026-11-25.html"><b>Wed 25 Nov 2026</b> · Daily: Gold, Bitcoin and the Nasdaq ended the day in the bottom of their ranges</a></li></ul></div></article>
+
+<section class="about band" id="about"><div class="wrap">
+<div><h2>About the range zones</h2>
+<p>The coloured zones come from Swing Intelligence, a TradingView indicator by Keyvan Khodakhah. They split the recent trading range into a premium area near the top, an equilibrium band in the middle and a discount area near the bottom, so you can see at a glance where price sits.</p>
+<p>They are context for the analysis, not buy or sell signals. The indicator is free on <a href="https://www.tradingview.com/u/keyvankho/#published-scripts">TradingView</a>.</p></div>
+<div id="disclaimer"><h2>Important</h2>
+<p class="small">Information only. Nothing here is financial advice or a recommendation to buy or sell any investment. Markets can fall as well as rise, and you can lose money. Levels come from the sources listed; charts use TradingView data and closing times can differ between sources. The author may hold positions in the markets discussed.</p>
+<p class="small">Every analysis stays available in the <a href="/archive.html">archive</a>.</p></div>
+</div></section>
+
+<article class="band"><div class="col"><h2 id="sources" style="margin-top:0">Sources</h2><div class="small"><p>Each analysis lists its own sources.</p></div></div></article>
+<footer><div class="wrap">markets.khodakhah.net · © Keyvan Khodakhah · Charts built from TradingView data</div></footer>
+
+<script>
+{
+const DATA={}, RMAP=[];
+const NS="http://www.w3.org/2000/svg";
+const esc=s=>String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const css=v=>getComputedStyle(document.documentElement).getPropertyValue(v).trim();
+const fmt=(v,dp)=>v.toLocaleString("en-GB",{minimumFractionDigits:dp,maximumFractionDigits:dp});
+const day=t=>new Date(t*1000+43200000).toLocaleDateString("en-GB",{day:"numeric",month:"short",timeZone:"UTC"});
+
+function rangeMap(el){
+  const W=el.clientWidth,H=el.clientHeight,narrow=W<460,x0=8,x1=W-8,rowH=(H-34)/RMAP.length;
+  const X=f=>x0+(x1-x0)*f, seg=[["disc",0,.1875],["eq",.4375,.5625],["prem",.8125,1]];
+  let s="";
+  RMAP.forEach((r,i)=>{
+    const y=i*rowH+22, lo=r.z.disc[0], hi=r.z.prem[1], f=(r.p-lo)/(hi-lo), fc=Math.max(-.03,Math.min(1.02,f));
+    const pos=f<0?"just below the discount zone":f<=.1875?"in the discount zone":f<.4375?"above discount":f<=.5625?"at equilibrium":f<.8125?"above equilibrium":"in the premium zone";
+    s+=`<text x="${x0}" y="${y-8}" font-size="${narrow?13:14}" font-weight="600" fill="${css("--ink")}">${esc(r.n)}</text>`;
+    s+=`<text x="${x1}" y="${y-8}" font-size="13" text-anchor="end" fill="${css("--mute")}">${esc(pos)}</text>`;
+    s+=`<rect x="${x0}" y="${y}" width="${x1-x0}" height="10" rx="5" fill="${css("--line")}" opacity=".55"/>`;
+    seg.forEach(([k,a,b])=>{s+=`<rect x="${X(a)}" y="${y}" width="${X(b)-X(a)}" height="10" rx="3" fill="${css("--"+k)}" opacity=".8"/>`});
+    s+=`<circle class="dot" cx="${X(fc)}" cy="${y+5}" r="8" fill="${css("--acc")}" stroke="${css("--paper")}" stroke-width="3"/>`;
+  });
+  const yk=H-8;
+  [["Discount",.09],["Equilibrium",.5],["Premium",.906]].forEach(([n,f])=>{s+=`<text x="${X(f)}" y="${yk}" font-size="12" text-anchor="middle" fill="${css("--mute")}">${n}</text>`});
+  el.innerHTML=`<svg viewBox="0 0 ${W} ${H}" xmlns="${NS}">${s}</svg>`;
+}
+
+function chart(el){
+  const d=DATA[el.dataset.chart], b=d.bars, n=b.c.length, W=el.clientWidth, H=el.clientHeight, narrow=W<520;
+  const L=narrow?40:58, R=narrow?104:190, T=10, B=26, pw=W-L-R, ph=H-T-B;
+  let lo=Math.min(...b.l), hi=Math.max(...b.h);
+  d.levels.forEach(v=>{lo=Math.min(lo,v.a,v.b??v.a);hi=Math.max(hi,v.a,v.b??v.a)});
+  const pad=(hi-lo)*.05; lo-=pad; hi+=pad;
+  const Y=v=>T+ph*(hi-v)/(hi-lo), step=pw/n, X=i=>L+step*(i+.5), bw=Math.max(1.5,step*.62);
+  const ink=css("--ink"), mute=css("--mute"), line=css("--line");
+  let s="";
+  [["prem",d.z.prem],["eq",d.z.eq],["disc",d.z.disc]].forEach(([k,[a,c]])=>{
+    const ya=Y(Math.min(c,hi)), yb=Y(Math.max(a,lo)); if(yb>ya) s+=`<rect x="${L}" y="${ya}" width="${pw+R-8}" height="${yb-ya}" fill="${css("--"+k)}" opacity=".16"/>`;});
+  const ticks=5; for(let i=0;i<=ticks;i++){const v=lo+(hi-lo)*i/ticks,y=Y(v);
+    s+=`<line x1="${L}" x2="${L+pw}" y1="${y}" y2="${y}" stroke="${line}" stroke-width="1" opacity=".7"/>`;
+    s+=`<text x="${L-6}" y="${y+4}" font-size="11.5" text-anchor="end" fill="${mute}">${fmt(v,v<1000?(d.dp||0):0)}</text>`;}
+  let lastM=-1; b.t.forEach((t,i)=>{const m=new Date(t*1000+43200000).getUTCMonth(); if(m!==lastM){lastM=m; if(i>2)
+    s+=`<text x="${X(i)}" y="${H-6}" font-size="11.5" text-anchor="middle" fill="${mute}">${new Date(t*1000+43200000).toLocaleDateString("en-GB",{month:"short",timeZone:"UTC"})}</text>`;}});
+  for(let i=0;i<n;i++){const o=b.o[i],c=b.c[i],up=c>=o,yo=Y(o),yc=Y(c),top=Math.min(yo,yc),hgt=Math.max(1,Math.abs(yc-yo));
+    s+=`<line x1="${X(i)}" x2="${X(i)}" y1="${Y(b.h[i])}" y2="${Y(b.l[i])}" stroke="${ink}" stroke-width="1"/>`;
+    s+=`<rect x="${X(i)-bw/2}" y="${top}" width="${bw}" height="${hgt}" fill="${up?css("--paper"):ink}" stroke="${ink}" stroke-width="1"/>`;}
+  const labs=d.levels.map(v=>{const ym=(Y(v.a)+Y(v.b??v.a))/2;
+    let t=v.label; if(narrow) t=t.replace(/^Resistance /,"R ").replace(/^Support /,"S ").replace(/ \(.*\)$/,"");
+    return {v,ym,t};}).sort((p,q)=>p.ym-q.ym);
+  for(let i=1;i<labs.length;i++) if(labs[i].ym-labs[i-1].ym<18) labs[i].ly=(labs[i-1].ly??labs[i-1].ym)+18;
+  labs.forEach(p=>{p.ly=Math.max(p.ly??p.ym,p.ym); const v=p.v;
+    if(v.b!==undefined) s+=`<rect x="${L}" y="${Y(v.b)}" width="${pw}" height="${Math.max(1,Y(v.a)-Y(v.b))}" fill="${ink}" opacity=".07"/>`;
+    [v.a,v.b].filter(x=>x!==undefined).forEach(x=>{s+=`<line x1="${L}" x2="${L+pw+6}" y1="${Y(x)}" y2="${Y(x)}" stroke="${ink}" stroke-width="1.2" stroke-dasharray="5 4"/>`});
+    s+=`<line x1="${L+pw+6}" x2="${L+pw+14}" y1="${p.ym}" y2="${p.ly}" stroke="${ink}" stroke-width="1"/>`;
+    s+=`<text x="${L+pw+16}" y="${p.ly+4}" font-size="${narrow?11:12}" fill="${ink}">${esc(p.t)}</text>`;});
+  const zl=[["Premium",d.z.prem],["Equilibrium",d.z.eq],["Discount",d.z.disc]];
+  zl.forEach(([nm,[a,c]])=>{const m=(Math.max(a,lo)+Math.min(c,hi))/2; if(c>lo&&a<hi&&!labs.some(p=>Math.abs(p.ly-Y(m))<16))
+    s+=`<text x="${W-10}" y="${Y(m)+4}" font-size="11.5" text-anchor="end" fill="${mute}">${nm}</text>`;});
+  s+=`<line class="xh" x1="0" x2="0" y1="${T}" y2="${T+ph}" stroke="${css("--acc")}" stroke-width="1" visibility="hidden"/>`;
+  s+=`<rect class="hit" x="${L}" y="${T}" width="${pw}" height="${ph}" fill="transparent"/>`;
+  el.innerHTML=`<svg viewBox="0 0 ${W} ${H}" xmlns="${NS}">${s}</svg><div class="tip"></div>`;
+  const svg=el.firstChild, xh=svg.querySelector(".xh"), tip=el.querySelector(".tip");
+  svg.querySelector(".hit").addEventListener("pointermove",e=>{const r=svg.getBoundingClientRect(),i=Math.max(0,Math.min(n-1,Math.floor((e.clientX-r.left-L)/step)));
+    xh.setAttribute("x1",X(i));xh.setAttribute("x2",X(i));xh.setAttribute("visibility","visible");const dp=d.dp;
+    tip.innerHTML=`<b>${day(b.t[i])}</b><br>Open ${fmt(b.o[i],dp)} · High ${fmt(b.h[i],dp)}<br>Low ${fmt(b.l[i],dp)} · Close ${fmt(b.c[i],dp)}`;
+    tip.style.display="block";const tx=X(i)>W/2?X(i)-tip.offsetWidth-10:X(i)+10;tip.style.left=tx+"px";tip.style.top=(T+8)+"px";});
+  svg.querySelector(".hit").addEventListener("pointerleave",()=>{xh.setAttribute("visibility","hidden");tip.style.display="none"});
+}
+
+const rm=document.getElementById("rmap"), roMap=new ResizeObserver(()=>{if(rm)rangeMap(rm)}); if(rm) roMap.observe(rm);
+const roCharts=new ResizeObserver(es=>es.forEach(e=>chart(e.target)));
+document.querySelectorAll(".fig[data-chart]").forEach(el=>roCharts.observe(el));
+const mq=matchMedia("(prefers-color-scheme: dark)"), redraw=()=>{if(rm)rangeMap(rm);document.querySelectorAll(".fig[data-chart]").forEach(chart)};
+mq.addEventListener("change",redraw); new MutationObserver(redraw).observe(document.documentElement,{attributes:true,attributeFilter:["data-theme"]});
+}
+</script>
+</body>
+</html>
